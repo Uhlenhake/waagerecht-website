@@ -37,7 +37,7 @@
   </header>
 
   <main>
-    <!-- HERO: Headline-Varianten A bis D per ?v=a|b|c|d (siehe Skript unten) -->
+    <!-- HERO: Headline-Varianten A bis C per ?v=a|b|c (siehe Skript unten) -->
     <section class="max-w-5xl mx-auto px-5 pt-8 pb-16 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <p class="inline-block rounded-full bg-[#E3F1EA] text-[#2F7A5B] text-xs font-bold px-3 py-1 mb-4">Fürs iPhone · in Deutsch</p>
@@ -162,13 +162,12 @@
   </footer>
 
   <script>
-    // Headline-Test ohne Cookies: Variante per URL-Parameter ?v=a|b|c|d (z. B. je Kanal ein Link)
+    // Headline-Test ohne Cookies: Variante per URL-Parameter ?v=a|b|c (z. B. je Kanal ein Link)
     (function () {
       var V = {
         a: ['Spritztag, Eiweiß, Arzttermin: endlich alles im Blick.', 'Der deutsche Begleiter fürs iPhone für Menschen mit ärztlich verordneter Abnehmspritze.'],
         b: ['Nie wieder raten, wann und wo du zuletzt gespritzt hast.', 'Erinnerung, Einstich-Log und Wochenverlauf, in 10 Sekunden eingetragen.'],
-        c: ['Geh vorbereitet in dein nächstes Arztgespräch.', 'Waagerecht sammelt deine Woche und macht daraus einen übersichtlichen Bericht als PDF.'],
-        d: ['Gebaut mit Menschen, die selbst spritzen.', 'Erinnerung, Tagebuch und Arzt-Bericht, kostenlos fürs iPhone.']
+        c: ['Geh vorbereitet in dein nächstes Arztgespräch.', 'Waagerecht sammelt deine Woche und macht daraus einen übersichtlichen Bericht als PDF.']
       };
       var v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
       if (V[v]) { document.getElementById('headline').textContent = V[v][0]; document.getElementById('subline').textContent = V[v][1]; }
